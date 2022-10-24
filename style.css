@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Battambang&family=Hanuman:wght@700&family=Koulen&family=Suwannaphum:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Koulen', cursive;  
+}
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: proximity;
+}
+
+div{
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+}
+.top-logo{
+    padding: 5px 0px;
+}
+.logo .logo-img img{
+    height: 80px;
+}
+.ads .ads-img img{
+    height: 80px;
+    float:right;
+}
+.my-menu{
+    position: sticky;
+    top:0;
+    z-index: 1000;
+    background-color: red;
+}
+.my-menu .menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.my-menu .menu ul li{
+    
+    float: left;
+}
+.my-menu .menu ul li a{
+    display: block;
+   padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.my-menu .menu ul li.bars-menu{
+    display: none;
+   
+}
+
+.my-menu .menu ul li.bars-menu a i{
+    outline-offset: 5px;
+    border-radius: 1px;
+    outline: 1px solid rgb(255, 255, 255);
+}
+.slide-contain{
+    position: relative;
+    width: 100%;
+   height: 400px;
+ 
+}
+.right-slide .slide-contain img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slide-contain .small-title{
+    position: absolute;
+    background-color: red;
+    color: white;
+    top:2px;
+    left: 2px;
+    padding: 5px 25px;
+    padding-right: 40px;
+    clip-path: polygon(30% 0%, 69% 0, 100% 100%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 0);
+}
+.slide-contain .title-contain{
+    position: absolute;
+    bottom: 2px;
+    padding: 5px;
+    user-select: none;
+    left: 0;
+    color: white;
+  
+}
+.slide-contain .title-contain h5,p{
+      font-family: 'Suwannaphum', serif;
+   
+}
+.slide-contain .title-contain p{
+    font-size: 12px;
+}
+.slide-contain::before{
+  
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+}
+.slide-contain:hover::before{
+    transition: .5s;
+    background-color: rgba(0, 0, 0, 0.277);
+}
+.slide-contain:hover .title-contain{
+    color: red;
+    transition: .5s;
+}
+.left-slide{
+   
+    height: 400px;
+}
+.box1{
+    width: 50%;
+    float: left;
+    position: relative;
+    height: 50%;
+    background-color: green;
+}
+.box1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box1 .small-title{
+    position: absolute;
+    top:2px;
+    left: 2px;
+    background-color: rgb(0, 47, 255);
+    color: white;
+    font-size: 10px;
+    padding: 5px 20px;
+    clip-path: polygon(30% 0%, 69% 0, 100% 100%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 0);
+}
+.box1 .title-contain {
+    position: absolute;
+    bottom:0px ;
+    left: 0;
+    color: white;
+    padding: 3px;
+}
+.box1::before{
+    position: absolute;
+    transition: .5s;
+    content: "";
+    width: 100%;
+    height: 100%;
+}
+.box1:hover::before{
+    background-color: rgba(0, 0, 0, 0.27);
+}
+.box1 .title-contain p{
+    font-size: 10px;
+}
+.box1.title-contain p,h6{
+    font-family: 'Suwannaphum', serif;
+}
+.box1:hover h6,.box1:hover p{
+    transition: .5s;
+  color: rgb(8, 255, 74);
+}
+
+.main-contain .left-contain{
+   overflow: hidden;
+
+}
+
+.main-contain .left-contain .head-title{
+    width: 100%;
+    position: relative;
+    float: left;
+ 
+}
+
+
+.main-contain .left-contain .head-title h4{
+    background: rgb(245, 2, 42);
+    padding: 15px;
+    float: left;
+    font-family: 'Koulen', cursive;  
+    margin: 0;
+    color: white;
+    font-size: 20px;
+    padding-right: 50px;
+    clip-path: polygon(30% 0%, 69% 0, 100% 100%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 0);
+}
+.main-contain .left-contain .head-title::before{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    
+    background-color: red;
+    content: "";
+
+}
+.left-contain .small-box{
+    height: 200px;
+}
+.small-box .img-box{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    height: 60%;
+   cursor: pointer;
+}
+.small-box .img-box img{
+    width: 100%;
+  
+    height: 100%;
+    object-fit: cover;
+}
+.small-box .title-box {
+    padding: 2px;
+    width: 100%;
+    height: 40%;
+    
+}
+.small-box a{
+    color: black;
+ 
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.small-box .img-box::before{
+    width: 100%;
+    height: 100%;
+    content: "";
+    
+    position: absolute;
+}
+.small-box .img-box:hover img{
+    transform: scale(1.02);
+}
+.small-box .img-box:hover::before{
+    background-color: rgba(0, 0, 0, 0.273);
+    transition: .5s;
+}
+.ads-left-box{
+   
+    width: 100%;
+  height: auto;
+}
+.ads-left-box img {
+    width: 100%;
+   height: 100%;
+   object-fit: cover;
+    
+}  
+
+.right-contain h5{
+    font-family: 'Suwannaphum', serif;
+} 
+
+.right-contain  .line{
+    width: 60px;
+ 
+    height: 3px;
+    background-color: red;
+}
+.box-item{
+   
+    margin-bottom: 9px;
+    margin-top: 8px;
+    width: 100%;
+    height: 70px;
+  
+}
+.box-item .img-box{
+     cursor: pointer;
+    float: left;
+    width: 30%;
+    height: 100%;
+    background-color: white;
+   
+}
+.right-contain .box-item{
+    background-color: white;
+}
+.box-item .img-box img{
+    width: 100%;
+  height: 100%;
+    object-fit: cover;
+}
+.box-item .title-item{
+    width: 70%;
+    float: left;
+    padding: 4px;
+    
+    
+    height: 100%;
+    
+}
+.box-item .title-item p{
+    font-size: 10px;
+}
+.left-phone-menu{
+    display: none;
+    width: 100%;
+    
+}
+.left-phone-menu ul li{
+    width: 100%;
+}
+.left-phone-menu ul li a{
+    display: block;
+    color: white;
+    padding: 5px 0px;
+    font-family: 'Battambang', cursive;
+    text-decoration: none;
+    
+}
+.left-phone-menu ul li a:hover{
+    color: chartreuse;
+    font-weight: bold;
+    transition: .3s;
+    font-size: 18px;
+}
+.box-item{
+    background-color: white;
+}
+.box-item .img-box{
+    overflow: hidden;
+    position: relative;
+}
+.box-item .img-box::before{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+
+}
+.box-item .img-box:hover img{
+    transition: .4s;
+    transform: rotate(5deg);
+}
+.box-item .img-box:hover::before{
+    transition: .4s;
+    background-color: rgba(212, 4, 4, 0.384);
+}
+.right-contain .box-item .img-box{
+    background-color:rgb(0, 0, 0);
+}
+
+.footer .footer-title img{
+    height: 60px;
+}
+.footer .footer-title a img{
+    width: 35px;
+    height: 35px;
+    margin-right: 3px;
+   height: auto;
+}
+.footer  p{
+    color: white;
+    padding: 0px;
+    margin-bottom: 7px;
+    opacity: .7;
+    font-size: 15px;
+    font-family: 'Battambang', cursive;
+}
+
+
+.footer-title:last-child a i{
+   
+font-size: 25px;
+margin: 2px;
+color: rgb(183, 175, 175);
+}
+.footer-title:last-child a:hover i{
+    color:white;
+    transition: .4s;
+}
+/* [xl] Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .menu-top{
+        padding-left: 4px;
+    }
+    .right-slide{
+        padding-right: 0;
+     }
+}
+/* [lg] large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .my-menu .menu ul li a{
+        font-size: 13px;
+    }
+    .menu-top{
+        padding-left: 4px;
+    }
+    .right-slide{
+        padding-right: 0;
+     }
+}
+/* [md] Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .logo .logo-img img{
+        height: 60px;
+    }
+   
+    
+    .ads .ads-img img{
+        height: 60px;
+       
+    }
+    .my-menu .menu ul li a{
+        font-size: 13px;
+    }
+    .my-menu .menu ul li:nth-child(9),li:nth-child(10),li:nth-child(11){
+        display: none;
+    }
+    .left-slide{
+        padding-right: 0px;
+    }
+    .left-contain .small-box .img-box {
+       height: 70%;
+    }
+    .left-contain .small-box .title-box{
+        height: 30%;
+    }
+  .container{
+    width: 100%;
+  }
+  
+ .slide{
+    padding-right: 24px
+ }
+ .right-slide{
+    padding-right: 0;
+ }
+ .top-logo{
+    padding-right: 12px;
+ }
+ .box-item{
+    height: 120px;
+ }
+.box-item .title-item p{
+    font-size: 20px;
+}
+ 
+}
+/* [sm] Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .logo .logo-img img{
+        height: 50px;
+    }
+    .logo .logo-img{
+        text-align: center;
+    }
+    .ads .ads-img img{
+        height: 50px;
+       
+    }
+    .ads .ads-img{
+        text-align: center;
+        padding: 4px 0;
+      }
+        .ads .ads-img img{
+            float: none;
+            height: 40px;
+        
+        }
+        .my-menu .menu ul li:nth-child(9),li:nth-child(10),li:nth-child(11){
+            display: none;
+        }
+        .my-menu .menu ul li.bars-menu{
+            display: block;
+        }
+       
+        .menu ul li:not(.bars-menu){
+            display: none;
+        }
+        .left-slide{
+            padding-left: 12px;
+        }
+        .slide{
+            width: 100%;
+           
+        }
+        .main-contain{
+            width: 100%;
+        }
+        .box-item{
+            height: 100px;
+         }
+        .box-item .title-item p{
+            font-size: 15px;
+        }
+}
+/* [col] Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .logo .logo-img{
+        text-align: center;
+    }
+    .logo .logo-img img{
+        height: 40px;
+    }
+    .top-logo{
+        width: 100%;
+    }
+  .ads .ads-img{
+    text-align: center;
+    padding: 4px 0;
+  }
+    .ads .ads-img img{
+        float: none;
+        height: 40px;
+    
+    }
+    .my-menu .menu ul li:nth-child(9),li:nth-child(10),li:nth-child(11){
+        display: none;
+    }
+    .my-menu .menu ul li.bars-menu{
+        display: block;
+    }
+    .menu-top{
+        width: 100%;
+    }
+    .menu ul li:not(.bars-menu){
+        display: none;
+    }
+    .left-slide{
+        padding-right: 0px;
+    }
+    .slide{
+        width: 100%;
+         padding-left: 0;
+    }
+   
+    .box1 .title-contain p,h6{
+      font-size: 12px;
+    }
+    .main-contain{
+        width: 100%;
+        padding: 0px;
+    }
+    .right-slide{
+        padding-right: 0px;
+    }
+   .footer-title{
+    text-align: center;
+    margin-bottom: 5px;
+   }
+   .box-item .img-box img{
+    width: 100%;
+  height:auto;
+   object-fit: cover;
+}
+   
+}
